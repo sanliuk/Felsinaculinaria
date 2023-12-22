@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us</title>
+
+<!-- Nel tag <head> del file HTML -->
+  <link rel="stylesheet" href="css/stylecontat.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+<!-- Include jQuery and jQuery UI scripts and styles -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">Home</a> | Book Now!</h1>
+</header>
+<div class="container">
+  <div class="contact-form">
+    <h2>Contact us now to check availability. We will reply as soon as possible. Thank you.</h2>
+    <form action="mailto:lucabazzoni3@gmail.com" method="post" enctype="text/plain">
+      <input class="contact-input" type="text" name="nome" placeholder="Name & Surname*" required>
+      <input class="contact-input" type="email" name="email" placeholder="Email*" required>
+      <input class="contact-input" type="tel" name="telefono" placeholder="Telephone">
+      <input class="contact-input" type="text" name="data" id="datepicker" placeholder="Select the date*" required>
+      <textarea class="contact-textarea" name="messaggio" placeholder="Text*" required></textarea>
+      <p class="required-message">Fields marked with " * " are required.</p>
+      <button class="contact-submit" type="submit">Invia</button>
+    </form>
+  </div>
+  
+</div>
+<!-- Initialize DatePicker -->
+<script>
+  $(function() {
+    $("#datepicker").datepicker();
+  });
+</script>
+</body>
+</html>

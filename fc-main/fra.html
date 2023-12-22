@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Felsina Culinaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <script src="languageSelector.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" /><!--bandiere-->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+
+</head>
+
+<body>
+  
+  <header class="header" id="navigation-menu">
+    <div class="container-wide">
+      <nav>
+        <header class="header" id="navigation-menu">
+          <div class="container centered-content">
+            <a href="index.html" class="logo">
+              <img src="image/logo.png" alt="Felsina Logo" class="logo-image">
+            </a>
+          </div>
+          <div class="language-selector">
+              <!-- Inglese (Regno Unito) -->
+              <a href="index.html" class="language" lang="en">
+                  <span class="fi fi-gb"></span>
+                  <!-- Puoi anche utilizzare un'etichetta di testo accanto all'icona della bandiera, es. <span>English</span> -->
+              </a>
+              
+              <!-- Italiano (Italia) -->
+              <a href="ita.html" class="language" lang="it">
+                  <span class="fi fi-it"></span>
+                  <!-- Puoi anche utilizzare un'etichetta di testo accanto all'icona della bandiera, es. <span>Italiano</span> -->
+              </a>
+              
+              <!-- Francese (Francia) -->
+              <a href="fra.html" class="language" lang="fr">
+                  <span class="fi fi-fr"></span>
+                  <!-- Puoi anche utilizzare un'etichetta di testo accanto all'icona della bandiera, es. <span>Français</span> -->
+              </a>
+
+
+              
+              <!-- carrello
+              <div id="cart">
+                <ul id="cart-items">
+                   -->
+                  <!-- Gli articoli saranno aggiunti qui dinamicamente 
+                </ul>
+                <button id="checkout">cart</button>
+              </div>
+                  -->
+          </div>
+        </header>
+        
+        <ul class="nav-menu">
+          <li> <a href="#contactus" class="nav-link">Réservez Maintenant</a> </li>
+          <li> <a href="#aboutus" class="nav-link">À Propos</a> </li>
+          <li> <a href="#gallery" class="nav-link">Galerie</a> </li>
+          <li> <a href="#contactus" class="nav-link">Contact</a></li>
+          <li> <a href="#contactus" class="nav-link">Avis</a> </li>
+      </ul>
+      
+        
+<!--menu a tendina funzionanteper telefono-->
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <script src="script.js"></script> <!-- .js del menu a tendina funzionanteper telefono-->
+
+
+  <section class="home" id="home">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/yourusername" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/yourusername" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <div class="head_container">
+      <div class="box">
+        <div class="text left-aligned-text">
+          <h1 class="title">FELSINA CULINARIA</h1>
+          <p class="subtitle">Chaque plat raconte une histoire, et chez Felsina Culinaria, nous voulons partager ces histoires avec vous</p>
+          <button class="custom-button" onclick="window.location.href='#contactus';">Réservez un Cours</button>
+          </div>
+          
+      </div>
+      <div class="image">
+        <img src="image/Home screen main.png" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="image/Home screen main.png" alt="" class="slide active" onclick="img('image/Home screen main.png')">
+        <img src="image/Home screen 2.png" alt="" class="slide active" onclick="img('image/Home screen 2.png')">
+        <img src="image/Home screen 3.png" alt="" class="slide active" onclick="img('image/Home screen 3.png')">
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+
+ <div class="container flex">
+    </div>
+  </section> 
+
+  <section class="book">
+    <div class="container flex">
+      <h5></h5>
+    </div>
+  </section> 
+
+  
+
+
+  <section class="about top" id="about">
+    <section class="book">
+      <div class="container flex">
+        <h5>Bienvenue dans notre voyage culinaire bolognais</h5>
+      </div>
+    </section> 
+  
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+         <!-- <img src="image/63.jpeg" alt="" class="image1">
+           
+            <img src="image/64.jpeg" alt="" class="image2"> 
+          -->
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5 id="aboutus">À Propos de Nous </h5>
+          <h2>Bienvenue dans Notre Voyage Culinaire Bolognais</h2>
+          <p>Rien ne me procure plus de joie que de partager les plats que je garde près de mon cœur. Cependant, alors que mes enfants sont partis explorer le monde, je me suis retrouvée avec une cuisine vide et personne à choyer avec mes créations culinaires.
+      
+          Mais aujourd'hui, je suis ravie de vous accueillir pour une expérience unique. Puisant dans les recettes chéries transmises de génération en génération par ma grand-mère, je suis ici pour vous enseigner les secrets ancestraux de la cuisine bolognaise.
+          
+          Ma mission est simple : veiller à ce que l'héritage des recettes de ma famille perdure, transcendant les frontières et les cultures. Je vous invite à faire partie de ce voyage séculaire, où la tradition rencontre l'innovation, et où les saveurs de Bologne prennent vie dans votre propre cuisine.
+          </p>
+      
+          <h5>Pourquoi Choisir Nos Cours de Cuisine Bolognaise</h5>
+          
+          <h5>Patrimoine Authentique</h5>
+          <p>Nos cours sont imprégnés des traditions authentiques de la cuisine bolognaise, vous assurant d'apprendre des meilleurs.
+          </p>
+          <h5>Expérience Pratique</h5>
+          <p>vous ne vous contenterez pas de regarder; vous retrousserez vos manches et créerez ces plats vous-même, guidés par notre expertise.
+          </p>
+          <h5>Attention Personnalisée</h5>
+          <p>contrairement aux grandes écoles culinaires, nous limitons la taille de nos classes pour vous offrir une attention personnalisée. Cela signifie que vous aurez amplement l'occasion de poser des questions, de demander des conseils et de recevoir des retours individualisés pour perfectionner vos compétences culinaires.
+          </p>
+          <h5>Maîtrise des Ingrédients</h5>
+          <p>Nous croyons que la clé pour véritablement maîtriser la cuisine bolognaise réside dans la compréhension et la sélection des meilleurs ingrédients.
+          </p>
+          <button class="btn1" onclick="window.location.href='aboutus.html';">EN SAVOIR PLUS</button>
+      </div>
+      
+      </div>
+    </div>
+  </section>
+  <!-- seleziona offerta-->
+  <section class="room top" id="room">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+        <h5>La cuisine est le langage que tout le monde comprend. Venez apprendre, cuisiner et vous connecter avec nous</h5>
+        <h2>Nos Plans</h2>
+        </div>
+        <div class="button">
+        <button class="btn1">VOIR TOUT</button>
+        </div>
+    </div>
+    
+
+
+      <div class="content grid">
+
+        <div class="box">
+          <div class="img">
+            <img src="image/a.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h3>Pâtes fraîches</h3>
+            <button class="add-to-cart" data-product="Pâtes fraîches" data-price="60">Ajouter au panier</button>
+
+            <p> <span>€</span>60 <span>Offre spéciale★</span> </p>
+            <div class="accordionWrapper">
+                <div class="accordionItem close">
+                  <h2 class="accordionIHeading">Description</h2>
+                  <div class="accordionItemContent">
+                    <p>un délice culinaire composé d'ingrédients simples – farine et œufs – pétris en une pâte, étalée et découpée en différentes formes. C'est une alternative tendre et maison aux pâtes séchées, offrant une saveur riche et réconfortante et une texture délicieuse. Vous avez le choix entre : tagliatelles, maccheroni alla chitarra et strozzapreti.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="accordionItem close">
+                  <h2 class="accordionIHeading">Disponible pour</h2>
+                  <div class="accordionItemContent">
+                    <p>-Online
+                    </p>
+                    <p>-En personne
+                    </p>
+                    <p>-En personne(Session privée)
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h3>Pâte aux épinards </h3>
+            <button class="add-to-cart" data-product="Spinach dough" data-price="60">Ajouter au panier</button>
+
+            <p> <span>€</span>60 <span>Offre spéciale★</span> </p>
+            <div class="accordionWrapper">
+                <div class="accordionItem close">
+                  <h2 class="accordionIHeading">Description</h2>
+                  <div class="accordionItemContent">
+                    <p>une variation vibrante de la pâte à pâtes traditionnelle, infusée d'épinards finement purés. Il ajoute une belle teinte verte et une subtile saveur terreuse aux plats de pâtes, rehaussant à la fois l’attrait visuel et le goût.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="accordionItem close">
+                  <h2 class="accordionIHeading">Disponible pour</h2>
+                  <div class="accordionItemContent">
+                    <p>-Online
+                    </p>
+                    <p>-En personne
+                    </p>
+                    <p>-En personne(Session privée)
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+                <div class="img">
+                  <img src="image/c.jpeg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Tagliatelle </h3>
+                  <button class="add-to-cart" data-product="Tagliatelle" data-price="60">Ajouter au panier</button>
+      
+                  <p> <span>€</span>60 <span>Offre spéciale★</span> </p>
+                  <div class="accordionWrapper">
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Description</h2>
+                        <div class="accordionItemContent">
+                          <p>de longs rubans de pâtes plats, de forme similaire aux fettuccines mais plus fins. Leur nom, qui signifie « coupes idiotes » en italien, fait référence à l'aspect distinctif coupé à la main. Les tagliatelles se marient à merveille avec diverses sauces (ragù de sanglier ordinaire/sauvage, cèpes, truffes, etc.), ce qui en fait un choix polyvalent pour les plats de pâtes bolognaises.
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Disponible pour</h2>
+                        <div class="accordionItemContent">
+                          <p>-Online
+                          </p>
+                          <p>-En personne
+                          </p>
+                          <p>-En personne(Session privée)
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        <div class="box">
+                <div class="img">
+                  <img src="image/d.jpeg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Ragù </h3>
+                  <button class="add-to-cart" data-product="Ragù" data-price="70">Ajouter au panier</button>
+      
+                  <p> <span>€</span>70 <span>Prix ​​d'origine</span> </p>
+                  <div class="accordionWrapper">
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Description</h2>
+                        <div class="accordionItemContent">
+                          <p>Ragù : un chef-d'œuvre riche, mijoté et savoureux à base de viandes hachées mijotées avec des tomates, des légumes aromatiques et une touche de vin. Cette sauce est le cœur et l'âme de la cuisine bolognaise classique.
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Disponible pour</h2>
+                        <div class="accordionItemContent">
+                          <p>-Online
+                          </p>
+                          <p>-En personne
+                          </p>
+                          <p>-En personne(Session privée)
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        <div class="box">
+                <div class="img">
+                  <img src="image/e.jpeg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Tagliatelle + ragù  </h3>
+                  <button class="add-to-cart" data-product="Tagliatelle + ragù " data-price="80">Ajouter au panier</button>
+      
+                  <p> <span>€</span>80 <span>Prix ​​d'origine </span> </p>
+                  <div class="accordionWrapper">
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Description</h2>
+                        <div class="accordionItemContent">
+                          <p>Véritable classique bolognais, ce plat associe des pâtes tagliatelles à l'emblématique sauce ragù. Les rubans de pâtes larges et plats constituent la toile parfaite pour la sauce succulente à la viande, ce qui donne un repas copieux et profondément satisfaisant.
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Disponible pour</h2>
+                        <div class="accordionItemContent">
+                          <p>-Online
+                          </p>
+                          <p>-En personne
+                          </p>
+                          <p>-En personne(Session privée)
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/f.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h3>Lasagne  </h3>
+            <button class="add-to-cart" data-product="Lasagne" data-price="80">Ajouter au panier</button>
+
+            <p> <span>€</span>80 <span>Prix ​​d'origine </span> </p>
+            <div class="accordionWrapper">
+                <div class="accordionItem close">
+                  <h2 class="accordionIHeading">Description</h2>
+                  <div class="accordionItemContent">
+                    <p>un plat de pâtes en couches de renommée mondiale composé de feuilles de pâtes, de sauce ragù, de sauce béchamel et de fromage, le tout cuit à la perfection. Chaque bouchée offre un mélange harmonieux de textures et de saveurs, ce qui en fait un plat réconfortant italien très apprécié.
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="accordionItem close">
+                  <h2 class="accordionIHeading">Disponible pour</h2>
+                  <div class="accordionItemContent">
+                    <p>-Online
+                    </p>
+                    <p>-En personne
+                    </p>
+                    <p>-En personne(Session privée)
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+                <div class="img">
+                  <img src="image/g.jpeg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Tortellini   </h3>
+                  <button class="add-to-cart" data-product="Tortellini" data-price="80">Ajouter au panier</button>
+      
+                  <p> <span>€</span>80 <span>Prix ​​d'origine </span> </p>
+                  <div class="accordionWrapper">
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Description</h2>
+                        <div class="accordionItemContent">
+                          <p>de délicates parcelles de pâtes remplies d'un mélange savoureux, un mélange de viandes, de fromages et d'herbes. Ces petites boulettes en forme d'anneau sont servies dans des bouillons ou avec de la crème.
+
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Disponible pour</h2>
+                        <div class="accordionItemContent">
+                          <p>-Online
+                          </p>
+                          <p>-En personne
+                          </p>
+                          <p>-En personne(Session privée)
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        <div class="box">
+                <div class="img">
+                  <img src="image/h.jpeg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Tortelloni burro e salvia </h3>
+                  <button class="add-to-cart" data-product="Tortelloni burro e salvia" data-price="80">Ajouter au panier</button>
+      
+                  <p> <span>€</span>80 <span>Prix ​​d'origine </span> </p>
+                  <div class="accordionWrapper">
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Description</h2>
+                        <div class="accordionItemContent">
+                          <p>Les tortelloni sont de plus gros sachets de pâtes remplis de fromage ricotta. Servis avec une sauce simple mais exquise composée de beurre fondu et de feuilles de sauge, ils créent un plat à la fois délicat et gourmand.
+
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Disponible pour</h2>
+                        <div class="accordionItemContent">
+                          <p>-Online
+                          </p>
+                          <p>-En personne
+                          </p>
+                          <p>-En personne(Session privée)
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        <div class="box">
+                <div class="img">
+                  <img src="image/i.jpeg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Ballanzoni </h3>
+                  <button class="add-to-cart" data-product="Tortelloni burro e salvia" data-price="80">Ajouter au panier</button>
+      
+                  <p> <span>€</span>80 <span>Prix ​​d'origine </span> </p>
+                  <div class="accordionWrapper">
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Description</h2>
+                        <div class="accordionItemContent">
+                          <p>un type unique de pâtes farcies, garnies d'ingrédients savoureux comme du fromage, des herbes et de la viande. Ils sont pliés dans une forme triangulaire distinctive, offrant un délicieux mélange de saveurs et de textures à chaque bouchée.
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Disponible pour</h2>
+                        <div class="accordionItemContent">
+                          <p>-Online
+                          </p>
+                          <p>-En personne
+                          </p>
+                          <p>-En personne(Session privée)
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        <div class="box">
+                <div class="img">
+                  <img src="image/l.jpeg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Gnocchi fritti ripieni </h3>
+                  <button class="add-to-cart" data-product="Gnocchi fritti ripieni " data-price="80">Ajouter au panier</button>
+      
+                  <p> <span>€</span>80 <span>Prix ​​d'origine </span> </p>
+                  <div class="accordionWrapper">
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Description</h2>
+                        <div class="accordionItemContent">
+                          <p>poches de pâte frite remplies de diverses garnitures salées (principalement du jambon et du fromage locaux). Ces délicieuses bouchées sont parfaites au goûter ou à l'apéritif, chaque bouchée révélant une délicieuse surprise à l'intérieur.
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Disponible pour</h2>
+                        <div class="accordionItemContent">
+                          <p>-Online
+                          </p>
+                          <p>-En personne
+                          </p>
+                          <p>-En personne(Session privée)
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        <div class="box">
+                <div class="img">
+                  <img src="image/m.jpeg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Cotolette alla bolognese </h3>
+                  <button class="add-to-cart" data-product="Cotolette alla bolognese" data-price="80">Ajouter au panier</button>
+      
+                  <p> <span>€</span>80 <span>Prix ​​d'origine </span> </p>
+                  <div class="accordionWrapper">
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Description</h2>
+                        <div class="accordionItemContent">
+                          <p>de tendres escalopes de veau, trempées dans un riche bouillon de coq avant d'être frites au beurre à la perfection. Ces côtelettes sont ensuite relevées avec l'ajout de savoureux jambon de Parme et un somptueux saupoudrage de parmesan râpé, ce qui donne un plat bolognais vraiment gourmand.
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Disponible pour</h2>
+                        <div class="accordionItemContent">
+                          <p>-Online
+                          </p>
+                          <p>-En personne
+                          </p>
+                          <p>-En personne(Session privée)
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/n.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h3>Latte in Piedi </h3>
+            <button class="add-to-cart" data-product="Latte in Piedi" data-price="80">Ajouter au panier</button>
+
+            <p> <span>€</span>80 <span>Prix ​​d'origine </span> </p>
+            <div class="accordionWrapper">
+                <div class="accordionItem close">
+                  <h2 class="accordionIHeading">Description</h2>
+                  <div class="accordionItemContent">
+                    <p>Un régal absolu pour tous les jeunes bolognais, cette délicieuse gourmandise est un mélange harmonieux de lait local crémeux et du croquant irrésistible des biscuits amaretti.
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="accordionItem close">
+                  <h2 class="accordionIHeading">Disponible pour</h2>
+                  <div class="accordionItemContent">
+                    <p>-Online
+                    </p>
+                    <p>-En personne
+                    </p>
+                    <p>-En personne(Session privée)
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+    </div>
+  </section>
+
+  <!-- new contact us con cartintegrato
+  <div class="container-contact">
+    <div class="contact-form" id="contactus">
+      <h2>Contactez-nous maintenant pour vérifier la disponibilité. Nous vous répondrons dès que possible. Merci.</h2>
+      <form action="process_form.php" method="post">
+        <input class="contact-input" type="text" name="nome" placeholder="Name & Surname*" required>
+        <input class="contact-input" type="email" name="email" placeholder="Email*" required>
+        <input class="contact-input" type="tel" name="telefono" placeholder="Phone number">
+        <input class="contact-input" type="text" name="data" id="datepicker" placeholder="Select the date*" required>
+        <textarea class="contact-textarea" name="messaggio" placeholder="Text*" required></textarea>
+        <p class="required-message">Les champs marqué d'une étoile sont obligatoires.</p>
+        <button class="contact-submit" type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+  -->
+    <div class="container-contact">
+      <div class="contact-form" id="contactus">
+          <h2>Contact us now to check availability. We will reply as soon as possible. Thank you.</h2>
+          <!-- Nota che l'attributo action è stato modificato con l'endpoint fornito da Formspree -->
+          <form action="https://formspree.io/f/xbjvqgvq" method="POST">
+              <input class="contact-input" type="text" name="nome" placeholder="Name & Surname*" required>
+              <input class="contact-input" type="email" name="email" placeholder="Email*" required>
+              <input class="contact-input" type="tel" name="telefono" placeholder="Phone number">
+              <input class="contact-input" type="text" name="data" id="datepicker" placeholder="Select the date*" required>
+              <textarea class="contact-textarea" name="messaggio" placeholder="Text*" required></textarea>
+              <p class="required-message">Les champs marqué d'une étoile sont obligatoires.</p>
+              <button class="contact-submit" type="submit">Envoyer</button>
+          </form>
+      </div>
+  </div>
+  
+  <!-- Initialize DatePicker -->
+  <script>
+    $(function() {
+      $("#datepicker").datepicker();
+    });
+  </script>
+
+
+  <section class="wrapper top">
+    <div class="container">
+      <div class="text">
+        <h2>Objectifs</h2>
+        <p>Nos cours de cuisine sont conçus pour vous connecter avec vos racines italiennes, découvrir la passion de la cuisine et nouer des liens durables. </p>
+
+        <div class="content">
+          <div class="box flex">
+            <i class="fas fa-swimming-pool"></i>
+            <span>Piscine</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-dumbbell"></i>
+            <span>Gym & yoga</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-spa"></i>
+            <span>Area selfcare</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-umbrella-beach"></i>
+            <span>Area Relax</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="image/IMG-2227.jpeg" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2>Comment cela fonctionne :</h2>
+          <p> </p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Experts en Cuisine Bolognaise</h2>
+            <div class="accordionItemContent">
+              <p>Nous partageons non seulement des recettes, mais aussi l'histoire et la passion derrière chaque plat, créant une expérience complète et authentique.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Expérience Mondiale</h2>
+            <div class="accordionItemContent">
+              <p>Nous accueillons des étudiants et des voyageurs internationaux de tous types, créant un environnement inclusif où vous pouvez explorer la culture italienne à travers la nourriture.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Explorez la Cuisine Bolognaise</h2>
+            <div class="accordionItemContent">
+              <p>Voyagez à travers les traditions culinaires de Bologne en apprenant à préparer des plats authentiques et délicieux.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Apprentissage Flexible</h2>
+            <div class="accordionItemContent">
+              <p>Nous proposons des cours en ligne et hors ligne, ainsi que des options de visionnage vidéo, pour s'adapter à votre style d'apprentissage et à votre emploi du temps.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Cultivez des Relations</h2>
+            <div class="accordionItemContent">
+              <p>Au-delà de la cuisine, nous encourageons la création de liens entre amis, familles et collègues à travers des activités culinaires engageantes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="accordion.js"></script> <!-- sistema per le foto nominate coi numeri-->
+
+  <section class="gallary mtop " id="gallery">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>BIENVENUE DANS NOTRE GALERIE DE PHOTOS</h5>
+          <h2>Galerie de photos de Felsia Culinaria</div>
+        </div>
+            <p>Faites défiler nos images et plongez-vous dans les couleurs, les saveurs et les expériences que nous proposons à Felsina Culinaria. Des leçons interactives aux délicieuses préparations, chaque image raconte une histoire de passion pour la nourriture.</p>
+          </h2>
+        </div>
+        <!--<div class="button">
+          <button class="btn1">VIEW GALLERY</button>
+        </div> -->
+      </div>
+       
+
+      <div class="owl-carousel owl-theme" id="imageCarousel">
+        <!-- Dynamic images will be added here -->
+      </div>
+              
+        
+
+    </div>
+  </section>
+
+  <script src="carousel.js"></script> <!-- sistema per scrolling foto-->
+
+  <section class="map top">
+
+    <h2>Comment arriver ici</h2>
+    <p>Il est possible d'assurer une navette depuis la gare de Castel San Pietro Terme pour des groupes de moins de 4 personnes.</p>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.174495875793!2d11.57424531176943!3d44.38853960444158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b331951e0f085%3A0x48669e16dbe0231c!2sVia%20Giuseppe%20Tanari%2C%202013%2C%2040024%20Castel%20San%20Pietro%20Terme%20BO%2C%20Italia!5e0!3m2!1sit!2sat!4v1691878087441!5m2!1sit!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+  </section>
+
+
+  <footer>
+    <div class="container grid top">
+      <div class="box">
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.174495875793!2d11.57424531176943!3d44.38853960444158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b331951e0f085%3A0x48669e16dbe0231c!2sVia%20Giuseppe%20Tanari%2C%202013%2C%2040024%20Castel%20San%20Pietro%20Terme%20BO%2C%20Italia!5e0!3m2!1sit!2sat!4v1691878087441!5m2!1sit!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+        <p>Modes de paiement acceptés</p>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Nouvelles récentes</h3>
+
+        <ul>
+          <li>Détendez-vous et évadez-vous dans notre nature !</li>
+          <li>Une proposition d'événement</li>
+          <li>Événements spéciaux (eventi dove potrete coinvogere più persone e amici con musica o feste, magari)</li>
+        </ul>
+      </div>
+
+      <!--<div class="box">
+        <h3>For Customers</h3>
+        <ul>
+          <li><a href="aboutus.html">About Felsina Culinaria</a></li>
+          <li>Customer Care/Help</li>
+          <li>Corporate Accounts</li>
+          <li>Financial Information</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+    -->
+
+      <div class="box">
+        <h3>Contactez-nous</h3>
+
+        <ul>
+          <li>Via Giuseppe Tanari, 2013, 40024 Castel San Pietro Terme BO, Italia</li>
+          <li><a href="mailto:lucabazzoni3@gmail.com"><i class="far fa-envelope"></i> bianca@felsinaculinaria.com</a></li>
+          <li><a href="tel:+393391440379"><i class="far fa-phone-alt"></i>  +39 3355626838</a></li>
+          <li><i class="far fa-comments"></i>24/ 7 Service client </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Carrello -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="cart.js"></script>
+  <script src="contactForm.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+
+/* Stile dell'header */
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7); /* Esempio di sfondo semitrasparente sopra l'immagine */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../image/68.jpeg'); /* Cambia il percorso e il nome dell'immagine */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif; /* Esempio di impostazione del font */
+  color: #fff; /* Assicurati che il testo sia leggibile sullo sfondo */
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: large;
+  padding: 40px;
+  border-radius: 15px; /* Bordi rotondi */
+  background-color: rgba(70, 69, 69, 0.587); /* Sfondo bianco trasparente */
+  color: #eca961; /* Assicurati che il testo sia leggibile sullo sfondo */
+  text-align: center;
+}
+
+.about-content .about-text p::first-line {
+  font-style: italic;
+}
+
+/* Stile del contenitore principale */
+.container {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.557); /* Esempio di sfondo semitrasparente sopra l'immagine */
+}
+
+
+/* Stile per la sezione estesa "extended-about" */
+.extended-about {
+  background-color: rgba(248, 231, 195, 0.716); /* Sfondo bianco trasparente */
+  padding: 20px;
+  border-radius: 15px; /* Bordi rotondi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  margin: 20px;
+  text-align: justify;
+}
+
+.extended-about h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.extended-about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Stile per il testo di questa sezione */
+.extended-about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
+}
+
+/* Stile del testo all'interno di questa sezione */
+.extended-about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}

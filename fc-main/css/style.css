@@ -1,0 +1,1070 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto Slab', serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #ffe7ab;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-wide {
+  max-width: 100%; /* O un altro valore che preferisci */
+  margin: auto;
+}
+
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.head_container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.title, .subtitle{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra ai testi */
+  font-weight: bold;
+  font-size: large;
+}
+
+.left-aligned-text h1.title,
+.left-aligned-text p.subtitle{
+    margin: 0;
+    padding: 0;
+    border: none; /* rimuovi eventuali bordi */
+    box-sizing: border-box; /* per assicurarsi che padding e bordi non influenzino la larghezza dell'elemento */
+    text-align: left; /* allineamento esplicito a sinistra */
+}
+
+
+/*--------------header--------*/
+header {
+  height: 8vh;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  display: flex; /* Aggiunta di Flexbox solo per il container del logo */
+  align-items: center; /* Centra verticalmente il contenuto all'interno */
+  justify-content: center; /* Se vuoi centrare orizzontalmente, altrimenti puoi ometterlo */
+  height: 100%; /* Garantisce che il container del logo copra l'intera altezza del suo contenitore padre */
+  margin-left: 50px; /* Lo stile esistente */
+}
+
+.logo-image {
+  width: 100px;
+  height: auto;
+  /* Non hai bisogno delle altre proprietà di centratura qui, poiché il container padre gestisce il centratura */
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center; /* Allinea orizzontalmente al centro */
+  align-items: center;     /* Allinea verticalmente al centro */
+  flex-direction: column;  /* Imposta la disposizione dei figli in colonna */
+}
+
+
+/* Aggiungi uno stile specifico per gli elementi di ancoraggio all'interno di <li> */
+.nav-menu li a {
+  display: block; /* Rendi l'elemento di ancoraggio un blocco per coprire l'intera area del <li> */
+  padding: 10px 20px; /* Aggiungi spazio di riempimento all'interno dell'elemento di ancoraggio */
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra ai testi */
+}
+
+.nav-menu li a:hover {
+  color: #ffd900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra ai testi */
+}
+
+.nav-menu{
+  margin-right: 15%;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Questo garantirà che la navbar sia sopra agli altri elementi. Puoi regolare il valore di z-index come necessario. */
+  background-color: #ffe7ab; /* Aggiungi un colore di sfondo per garantire che il testo sotto non venga mostrato attraverso la navbar */
+  /* Altre proprietà... */
+
+}
+
+header nav {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.hambuger {
+  display: none;
+}
+
+.mobile-menu-active {
+  background-color: rgb(171, 136, 84); /* Colore di sfondo giallo */
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  margin-left: 3rem;
+}
+
+header ul li a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #ffb700;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 20;
+  }
+
+  header ul.active {
+    left: 0%;
+  }
+
+  header ul li {
+    margin: 2.5rem 0;
+  }
+
+  header ul li a {
+    color: black;
+  }
+
+  .hambuger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hambuger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hambuger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hambuger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.language-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000; 
+}
+
+.language-selector .language {
+  margin-left: 10px;
+  display: inline-block;
+
+}
+
+.language-selector img.selected {
+  border: 2px solid yellow;
+}
+
+.language-selector img {
+  width: 25px;
+  height: auto;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+/*--------------header--------*/
+/*--------------home--------*/
+.home{
+  background-color: #4d432a25;
+  margin-top: 60px;  /* Adjust this value based on the height of your navbar */
+
+}
+
+.home .image img {   /*immagini grandi*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%; /* This will ensure the width is always 100% of the container */
+  max-width: 100%; /* This prevents the image from exceeding its actual width */
+  height: auto; /* This maintains the aspect ratio */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;}
+
+
+ /* Per dispositivi con una larghezza massima di 800px */
+@media (max-width: 768px) {
+  .home .image img {
+    width: 100%; /* Adatta l'immagine alla larghezza del contenitore */
+    height: auto; /* Conserva il rapporto di aspetto dell'immagine */
+  }
+}
+
+
+
+.heading h4 {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 3vh;
+  color: #838282;
+
+}
+
+
+
+.home .text {
+  max-width: 50%;
+  color: white;
+  margin: 20% 0 0 10%;
+}
+
+.home h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.home p {
+  font-weight: 400;
+  line-height: 25px;
+  font-family: sans-serif;
+  font-size: 17px;
+  margin: 50px 0 0 50px;
+}
+
+
+button {
+  padding: 20px 40px;
+  background: none;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold; 
+
+}
+
+
+.add-to-cart{
+  background-color: #222222;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-align: left;
+  font-size: 16px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center; /* Centra verticalmente il contenuto all'interno */
+  justify-content: center; /* Se vuoi centrare orizzontalmente, altrimenti puoi ometterlo */
+}
+
+.add-to-cart:hover{
+  background-color: #ffe100;
+  color: #222222;
+}
+
+/* Stile di base del pulsante */
+  .custom-button {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-align: left;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: #fecc6100;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  }
+
+  /* Stile al passaggio del mouse */
+  .custom-button:hover {
+    background-color: #ffe100;
+    color: #222222;
+  }
+
+.home .image_item {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.home .image_item img {
+  width: 140px;
+  height: 94px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.home .image_item img.active {
+  border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .home .image_item {
+    top: 10%;   /* Riduci la distanza dal bordo superiore */
+    right: 10%; /* Riduci la distanza dal bordo destro */
+  }
+
+  .home .image_item img {
+    width: 100px;  /* Riduci la larghezza */
+    height: 67px;  /* Riduci l'altezza mantenendo le proporzioni */
+    margin: 5px;   /* Riduci il margine */
+  }
+}
+
+
+.home .box .text {
+  position: relative;
+}
+
+/*--------------home--------*/
+/*--------------book--------*/
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+
+/*--------------Payment--------*/
+.gridpay {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Utilizziamo 3 colonne invece di 4 */
+  grid-gap: 5px;
+  align-items: center; /* Allinea verticalmente i contenuti delle colonne */
+  font-size: 10px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center; /* Assicura che il testo e le icone siano allineati verticalmente */
+}
+
+.payment-method p {
+  margin: 0; /* Rimuove il margine di default dei paragrafi */
+  display: flex;
+  align-items: center; /* Allinea l'icona con il testo */
+  gap: 10px; /* Distanza tra testo e icona */
+}
+
+
+
+
+.book {
+  margin-top: 5%;
+  width: 100%;
+  height: 20vh;
+  color: rgb(255, 139, 139);
+  margin-top: 10%;
+  height: auto;
+}
+
+.book h5 {
+  text-align: center;
+  color: rgb(245, 204, 0);
+  font-size: 30px; /* Puoi scegliere la dimensione che preferisci */
+  width: 100%;
+  height: 20vh;
+  margin-top: 3%;
+  height: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra ai testi */
+
+}
+
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  background: #f0ac59;
+  margin-top: 20px;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+
+/*--------------book--------*/
+/*--------------about--------*/
+.top {
+  margin-top: 10%;
+}
+
+.mtop {
+  margin-top: 5%;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.right {
+  padding: 50px 50px 50px 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: #fff1cc; /* Scegli il colore che preferisci */
+  border-radius: 30px; /* Scegli il raggio che preferisci per gli angoli arrotondati */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.right h5{
+margin-bottom: 20px;
+}
+
+.right p {
+  text-align: justify;
+}
+
+
+.righthome {
+  padding: 50px 50px 50px 40px;
+  background-color: #fff1cc; /* Scegli il colore che preferisci */
+  border-radius: 30px; /* Scegli il raggio che preferisci per gli angoli arrotondati */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+
+.rightobjectves {
+  padding: 50px 50px 50px 40px;
+  background-color: #fff1cc; /* Scegli il colore che preferisci */
+  border-radius: 30px; /* Scegli il raggio che preferisci per gli angoli arrotondati */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+
+
+}
+
+.about {
+  background-image: url('../image/IMG-4922.jpg');  /* Sostituisci con il percorso effettivo della tua immagine */
+  background-size: cover;  /* Adatta l'immagine di sfondo per coprire l'intera sezione */
+  background-position: center;  /* Centra l'immagine di sfondo nella sezione */
+  background-repeat: no-repeat;  /* Evita la ripetizione dell'immagine di sfondo */
+  /* Se desideri un colore di sfondo in caso l'immagine di sfondo non carichi o sia trasparente, puoi aggiungere: */
+  background-color: #ffffff;  
+  margin-bottom: 50px;
+}
+
+.about .img {
+  position: relative;
+}
+
+.about .image1 {
+  width: 310px;
+  height: 450px;
+}
+
+.about .image2 {
+  width: 325px;
+  height: 220px;
+  position: absolute;
+  bottom: 5px;
+  z-index: 2;
+  right: 30%;
+}
+
+.heading {
+  position: relative;
+}
+
+
+/*
+.heading::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100px;
+  height: 4px;
+  background: #C1B086;
+}
+*/
+
+.heading h5 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #5f5f5f;
+  font-size: 20px;
+}
+
+.heading h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0 40px 0;
+  color: #eaca2c;
+}
+
+.heading p {
+  margin-bottom: 20px;
+  line-height: 25px;
+  color: #5f5f5f;
+  margin: 0 0 20px 50px;
+}
+
+.heading .btn1 {
+  margin: 50px 0 20px 50px;
+}
+
+.btn1 {
+  background: #d5a36d;
+  color: white;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 50px;
+
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #ffd283;
+  border-radius: 50px;
+  border-color: black;
+  color: #222222;
+}
+
+/*icone socials*/
+.social-icons {
+  position: fixed;   /* Fisso sulla pagina */
+  top: 50%;         /* Posizione verticale centrale */
+  left: 50px;  /* Distanza delle icone dal bordo sinistro per la visione da computer */
+  transform: translateY(-50%); /* Centra verticalmente */
+  z-index: 1000; /* Un valore elevato per assicurarti che resti sopra gli altri elementi */
+  
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    left: 10px;  /* Distanza delle icone dal bordo sinistro per la visione da telefono */
+  }
+}
+
+.social-icons a {
+  display: block;    /* Mostra come blocco */
+  margin: 5px 0;    /* Spazio tra le icone */
+  font-size: 24px;  /* Dimensione delle icone */
+  color: #ffffff;      /* Colore delle icone. Cambialo a seconda delle tue preferenze */
+  text-decoration: none;  /* Rimuove sottolineatura dai link */
+  text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.social-icons a:hover {
+  color: #ffd900;   /* Cambia colore quando passi sopra */
+  text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+
+
+/*--------------about--------*/
+/*--------------wrapper--------*/
+.wrapper {
+  background-image: url("../image/IMG-5219.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 480px;
+  position: relative;
+}
+
+.wrapper .text {
+  background: #f7d05a;
+  padding: 50px;
+  width: 40%;
+  height: 600px;
+  position: absolute;
+  top: -13%;
+  right: 10%;
+  padding-top: 10%;
+  color: white;
+
+}
+
+.wrapper .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+}
+
+.wrapper h2 {
+  font-weight: 400;
+}
+
+.wrapper p {
+  margin: 20px 0 50px 0;
+  line-height: 30px;
+}
+
+.wrapper i {
+  margin: 5px 20px 0 0;
+}
+
+/*--------------wrapper--------*/
+/*--------------room--------*/
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.room img {
+  width: 100%;
+  height: 100%;
+}
+
+.room .box {
+  box-shadow: 0 13px 43px 0 rgb(37 46 89/10%);
+  background-color: #fef0d8;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.room .text {
+  padding: 20px;
+}
+
+.room h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.room p span {
+  font-size: 12px;
+  color: grey;
+}
+
+.room p {
+  font-size: 20px;
+}
+
+/*--------------room--------*/
+/*--------------wrapper2--------*/
+.wrapper2 {
+  background-image: url("../image/prova.jpg");
+}
+
+.wrapper2 .text {
+  left: 10%;
+}
+
+.wrapper2 h5,
+.wrapper2 h2 {
+  color: white;
+}
+
+.wrapper2 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.wrapper2 .para h5 {
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.wrapper2 .para {
+  margin-left: 10%;
+}
+
+/*--------------wrapper2--------*/
+/*--------------restaurant--------*/
+
+.restaurant img {
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant .right {
+  padding: 50px 50px 50px 100px;
+}
+
+.restaurant h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.restaurant .text p {
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+
+.accordionItem {
+  margin-top: 30px;
+}
+
+.accordionItem p {
+  font-size: 15px;
+  opacity: 0.8;
+  font-family: sans-serif;
+  line-height: 20px;
+}
+
+.accordionIHeading {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #C1B086;
+  margin-bottom: 20px;
+}
+
+.close .accordionItemContent {
+  height: 0px;
+  transition: height 1s ease-out;
+  transform: scaleY(0);
+  float: left;
+  display: block;
+  background-color: #fff;
+}
+
+.open .accordionItemContent {
+  padding: 30px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 0 10px 0;
+  display: block;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+  box-sizing: border-box;
+  box-shadow: 0 13px 43px 0 rgb(37 46 89 / 10%);
+}
+
+.accordionItemContent p {
+  text-align: justify;
+  word-spacing: -1px; /* Regola il valore in base alle tue esigenze */
+
+}
+
+
+/*--------------restaurant--------*/
+/*--------------gallary--------*/
+.gallary img {
+  max-width: 100%;
+  height: auto;
+}
+.gallary p {
+text-align: justify;
+margin-bottom: 20px;
+
+}
+
+
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  cursor: pointer;
+  top: 35%;
+  background: white !important;
+  transition: 0.5s;
+  margin-top: 20px;
+
+}
+
+.owl-carousel .owl-prev {
+  left: 33px;
+}
+
+.owl-carousel .owl-next {
+  right: 33px;
+}
+
+.owl-carousel .owl-next:hover,
+.owl-carousel .owl-prev:hover {
+  background: #C1B086 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .owl-carousel .owl-next,
+  .owl-carousel .owl-prev {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+/*--------------gallary--------*/
+/*--------------map--------*/
+.map iframe {
+  width: 100%;
+}
+
+/*--------------map--------*/
+/*--------------footer--------*/
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer li {
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+
+footer li:hover {
+  color: #C1B086;
+  cursor: pointer;
+}
+
+/*--------------footer--------*/
+@media only screen and (max-width:768px) {
+  .home .box .text {
+    max-width: 100%;
+  }
+
+  .home .box .text::after,
+  .home .image_item {
+    display: none;
+  }
+
+  .restaurant .container,
+  .about .container,
+
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .wrapper .text {
+    width: 80%;
+  }
+
+  .room {
+    margin-bottom: 100px;
+  }
+
+  .room .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .restaurant .right {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  footer .payment {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home .text {
+    margin: 10% 0 0 0;
+  }
+
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .about p,
+  .home p {
+    margin: 50px 0 0 0;
+  }
+
+  .wrapper .text {
+    padding: 10px;
+    height: 600px;
+  }
+
+  .heading_top {
+    margin-top: 100px;
+  }
+
+  .heading_top button {
+    display: none;
+    
+  }
+
+  .restaurant .flex {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+
+/*   -------     contact us    --------   */
+
+.container-contact {
+  padding: 2rem;
+  text-align: center;
+  background-image: url('../image/2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-form {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #ffe88e;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.contact-input {
+  width: 100%;
+  height: 3.5vh;
+  margin-bottom: 1rem;
+  padding: 0.1rem;
+  border: 1px solid #ebbf79;
+  border-radius: 5px;
+  background-color: rgb(255, 198, 29);
+}
+.contact-textarea {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 1rem;
+  padding: 0.1rem;
+  border: 1px solid #db5757;
+  border-radius: 5px;
+  resize: none; /* Impedisce il ridimensionamento del riquadro del campo di testo */
+
+}
+.contact-submit {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #f1ba3a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.required-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.image-section img {
+  width: auto;
+  max-width: calc(50% - 10px); /* 50% meno il margine tra le immagini */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.map.top {
+  text-align: center;
+  color: rgb(123, 46, 28);
+}
+
+.map.top iframe {
+    display: block;
+    margin: 20px auto;
+}

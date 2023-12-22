@@ -1,0 +1,87 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2cb87;
+  }
+  header {
+    background-color: #ccaa87;
+    color: #f3c44e;
+    text-align: center;
+    padding: 1rem;
+  }
+/* Aggiungi questi stili nel file "stylecontact.css" */
+.container {
+  padding: 2rem;
+  text-align: center;
+  background-image: url('../image/2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+  .contact-form {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #f6e798;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .contact-input {
+    width: 100%;
+    height: 3.5vh;
+    margin-bottom: 1rem;
+    padding: 0.1rem;
+    border: 1px solid #e79106;
+    border-radius: 5px;
+  }
+  .contact-textarea {
+    width: 100%;
+    height: 10.5vh;
+    margin-bottom: 1rem;
+    padding: 0.1rem;
+    border: 1px solid #db5757;
+    border-radius: 5px;
+    resize: none; /* Impedisce il ridimensionamento del riquadro del campo di testo */
+
+  }
+  .contact-submit {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f1ba3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .required-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  header h1 a {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+  }
+
+/* Aggiungi questi stili nel file "stylecontact.css" */
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.image-section img {
+  width: auto;
+  max-width: calc(50% - 10px); /* 50% meno il margine tra le immagini */
+  height: auto;
+  margin-bottom: 10px;
+}
+
